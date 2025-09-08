@@ -11,7 +11,7 @@ as $$
     plpy.error(f"Process id {pid} does not exist.")
   
   if psutil_interval < 0:
-    plpy.error("Invalid interv value. Value should be >=0.")
+    plpy.error("Invalid psutil_interval value. Value should be >=0.")
 
   try:
 
