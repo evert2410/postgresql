@@ -1,4 +1,4 @@
--- © 2025 Evert Carton <evert@letshavealook.info>
+-- © 2023 Evert Carton <evert@letshavealook.info>
 
 create or replace function sys_info(pid int, psutil_interval float default 0.05) returns jsonb
 as $$
