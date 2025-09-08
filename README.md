@@ -6,10 +6,6 @@
  create or replace view pg_stat_activity_ext as
     select
            sys_info(pid) sys_info,
-           case
-             when state = 'idle' then state_change - query_start
-             else now() - state_change
-           end query_duration,
            *
            from pg_stat_activity
 ```
